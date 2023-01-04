@@ -8,5 +8,10 @@ export default NextAuth({
       clientSecret: process.env.KAKAO_CLIENT_SECRET!,
     }),
   ],
+  pages: {
+    signIn: "/signin",
+    signOut: "/signout",
+    error: "/error",
+}
   
 })
